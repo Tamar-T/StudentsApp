@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
+
+    <!-- ✅ Toolbar עם כותרת באנגלית -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingTop="8dp"
+        android:elevation="4dp"
+        app:title="Edit Student"
+        app:titleTextColor="@android:color/white"/>
 
     <ImageView
         android:id="@+id/studentImageView"
@@ -61,7 +73,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Delete Student"
-        android:textColor="#FF0000"
         android:layout_marginBottom="8dp" />
 
     <Button
@@ -76,4 +87,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Back" />
+
 </LinearLayout>

@@ -27,6 +27,7 @@ class EditStudentActivity : AppCompatActivity() {
         val saveButton = findViewById<Button>(R.id.saveButton)
         val deleteButton = findViewById<Button>(R.id.deleteButton)
         val cancelButton = findViewById<Button>(R.id.cancelButton)
+        val backButton = findViewById<Button>(R.id.backButton)
 
         studentNameEditText.setText(student.name)
         studentIdEditText.setText(student.id)
@@ -76,5 +77,9 @@ class EditStudentActivity : AppCompatActivity() {
             setResult(Activity.RESULT_CANCELED)
             finish()
         }
+
+        backButton.setOnClickListener {
+            finish()
     }
 }
+    }
